@@ -1,22 +1,35 @@
-document.addEventListener('DOMContentLoaded', function () {
-    var toggle = document.getElementById('nav-toggle');
-    var nav    = document.getElementById('primary-nav');
+(function () {
+  'use strict';
 
-    if (!toggle || !nav) return;
+  document.addEventListener('DOMContentLoaded', function () {
+    var toggle  = document.getElementById('nav-toggle');
+    var overlay = document.getElementById('nav-overlay');
+    if (!toggle || !overlay) return;
+
+    function openMenu() {
+      overlay.classList.add('open');
+      toggle.classList.add('open');
+      toggle.setAttribute('aria-expanded', 'true');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeMenu() {
+      overlay.classList.remove('open');
+      toggle.classList.remove('open');
+      toggle.setAttribute('aria-expanded', 'false');
+      document.body.style.overflow = '';
+    }
 
     toggle.addEventListener('click', function () {
-        var open = nav.classList.toggle('open');
-        toggle.classList.toggle('open', open);
-        toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
-        document.body.style.overflow = open ? 'hidden' : '';
+      overlay.classList.contains('open') ? closeMenu() : openMenu();
     });
 
-    nav.querySelectorAll('a').forEach(function (link) {
-        link.addEventListener('click', function () {
-            nav.classList.remove('open');
-            toggle.classList.remove('open');
-            toggle.setAttribute('aria-expanded', 'false');
-            document.body.style.overflow = '';
-        });
+    overlay.querySelectorAll('a').forEach(function (link) {
+      link.addEventListener('click', closeMenu);
     });
-});
+
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape') closeMenu();
+    });
+  });
+})();

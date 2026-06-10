@@ -1,45 +1,33 @@
 <?php get_header(); ?>
 
-<!-- ============================================================
-     PAGE HERO
-============================================================ -->
-<section class="page-hero" aria-label="Contact">
-    <div class="wrap--sm center">
-        <p class="page-hero__sub">The Jaiye Concierge</p>
-        <h1 class="page-hero__heading">Begin here.</h1>
-        <p class="page-hero__body">Membership starts with a conversation. Send us a note and we'll be in touch to arrange a call.</p>
-    </div>
-</section>
+<div class="contact-page">
 
-<!-- ============================================================
-     CONTACT BODY
-============================================================ -->
-<section class="contact-body">
-    <div class="contact-body__inner">
+    <div class="contact-hero">
 
-        <span class="label">Get in touch</span>
-        <span class="rule"></span>
+        <h1 class="contact-heading">Begin<br>here.</h1>
 
-        <a href="mailto:enjoy@thejaiyeconcierge.com" class="contact-body__email">
+        <a href="mailto:enjoy@thejaiyeconcierge.com" class="contact-email-link">
             enjoy@thejaiyeconcierge.com
         </a>
 
-        <a href="mailto:enjoy@thejaiyeconcierge.com" class="btn btn--dark">
+        <a href="mailto:enjoy@thejaiyeconcierge.com" class="btn-outline">
             Send an email
         </a>
 
-        <p class="contact-body__note">
+        <p class="contact-note">
             No forms. No auto-responses.<br>
             We read every message personally and reply within two working days.
         </p>
 
-        <div class="contact-body__social">
-            <a href="https://www.instagram.com/thejaiyeconcierge" target="_blank" rel="noopener noreferrer">
-                @thejaiyeconcierge on Instagram
-            </a>
-        </div>
+        <a href="https://www.instagram.com/thejaiyeconcierge"
+           class="contact-insta"
+           target="_blank"
+           rel="noopener noreferrer">
+            @thejaiyeconcierge
+        </a>
 
     </div>
-</section>
+
+</div>
 
 <?php get_footer(); ?>

@@ -21,23 +21,17 @@
                  width="auto">
         </a>
 
-        <nav id="primary-nav" class="nav-links" aria-label="Primary navigation">
+        <nav class="nav-links" aria-label="Primary navigation">
             <a href="<?php echo esc_url( home_url( '/' ) ); ?>"
-               <?php echo ( is_front_page() || is_home() ) ? 'class="current" aria-current="page"' : ''; ?>>
-               Home
-            </a>
+               <?php echo ( is_front_page() || is_home() ) ? 'class="current" aria-current="page"' : ''; ?>>Home</a>
             <a href="<?php echo esc_url( home_url( '/membership/' ) ); ?>"
-               <?php echo is_page( 'membership' ) ? 'class="current" aria-current="page"' : ''; ?>>
-               Membership
-            </a>
+               <?php echo is_page( 'membership' ) ? 'class="current" aria-current="page"' : ''; ?>>Membership</a>
             <a href="<?php echo esc_url( home_url( '/contact/' ) ); ?>"
-               <?php echo is_page( 'contact' ) ? 'class="current" aria-current="page"' : ''; ?>>
-               Contact
-            </a>
+               <?php echo is_page( 'contact' ) ? 'class="current" aria-current="page"' : ''; ?>>Contact</a>
         </nav>
 
         <button class="nav-toggle" id="nav-toggle"
-                aria-controls="primary-nav"
+                aria-controls="nav-overlay"
                 aria-expanded="false"
                 aria-label="Toggle navigation">
             <span></span>
@@ -47,3 +41,12 @@
 
     </div>
 </header>
+
+<!-- Full-screen mobile overlay -->
+<div class="nav-overlay" id="nav-overlay" role="dialog" aria-modal="true" aria-label="Navigation">
+    <nav class="nav-overlay__links">
+        <a href="<?php echo esc_url( home_url( '/' ) ); ?>">Home</a>
+        <a href="<?php echo esc_url( home_url( '/membership/' ) ); ?>">Membership</a>
+        <a href="<?php echo esc_url( home_url( '/contact/' ) ); ?>">Contact</a>
+    </nav>
+</div>
