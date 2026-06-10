@@ -17,7 +17,7 @@
             <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/TJC-Logo.png"
                  alt="The Jaiye Concierge"
                  class="site-logo__img"
-                 height="38"
+                 height="46"
                  width="auto">
         </a>
 
