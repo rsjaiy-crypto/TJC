@@ -16,7 +16,6 @@ $t = esc_url( get_template_directory_uri() );
     </div>
 
     <div class="hero-content">
-        <img src="<?php echo $t; ?>/assets/TJC-Logo-Hero.png" alt="The Jaiye Concierge" class="hero-logo">
         <em class="hero-word">Enjoy.</em>
         <p class="hero-sub">A private concierge service for Nigerians and the wider African diaspora.</p>
         <a href="<?php echo esc_url( home_url( '/membership/' ) ); ?>" class="btn-outline">
@@ -99,7 +98,19 @@ $partners = [
     <div class="container--sm center">
         <span class="section-label">Our Promise</span>
         <span class="brass-rule"></span>
-        <p class="promise-quote">Jaiye is Yoruba for enjoy life.</p>
+        <p class="promise-quote" id="promise-quote"></p>
+        <script>
+        (function () {
+          var quotes = [
+            "You’ve built a life worth enjoying.",
+            "Enjoy your life. We’ll handle the rest.",
+            "The life you’ve built deserves to be lived.",
+            "Your time is the one thing we can’t replace."
+          ];
+          var el = document.getElementById('promise-quote');
+          if (el) el.textContent = quotes[Math.floor(Math.random() * quotes.length)];
+        })();
+        </script>
         <p class="promise-body">We exist for the people who have built lives worth enjoying — and don't always have the time to enjoy them. Our job is to take the friction out, so the moments you actually live for are the ones you remember.</p>
         <p class="promise-pillars">Travel. Health. Access. Enjoyment.</p>
     </div>
