@@ -68,6 +68,7 @@ $partners = [
 ];
 ?>
 <section class="marquee-section" aria-label="Trusted partners">
+    <p class="marquee-intro">Through our travel arm, Jaiye Journeys, we are proud members of the following luxury preferred partner programmes.</p>
     <div class="marquee-track">
 
         <div class="marquee-inner" aria-hidden="false">

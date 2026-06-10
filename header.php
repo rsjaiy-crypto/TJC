@@ -22,7 +22,7 @@
             <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/TJC-Logo.png"
                  alt="The Jaiye Concierge"
                  class="site-logo__img"
-                 height="136"
+                 height="160"
                  width="auto">
         </a>
 
