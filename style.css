@@ -1,0 +1,853 @@
+/*
+Theme Name: The Jaiye Concierge
+Theme URI: https://thejaiyeconcierge.com
+Author: The Jaiye Concierge
+Author URI: https://thejaiyeconcierge.com
+Description: A private concierge service for Nigerians and the wider African diaspora.
+Version: 1.0.0
+Requires at least: 6.0
+Requires PHP: 8.0
+License: Private
+Text Domain: tjc
+*/
+
+/* ============================================================
+   CUSTOM PROPERTIES
+============================================================ */
+
+:root {
+  --green:       #1B3A2D;
+  --gold:        #B5975A;
+  --cream:       #FAF7F2;
+  --white:       #FFFFFF;
+  --text:        #1B3A2D;
+  --text-mid:    #5a6b62;
+  --border:      rgba(181, 151, 90, 0.22);
+  --border-light: rgba(250, 247, 242, 0.15);
+
+  --font-h:      'Cormorant Garamond', Georgia, serif;
+  --font-b:      'Jost', system-ui, sans-serif;
+
+  --width:       1160px;
+  --width-mid:   880px;
+  --width-sm:    680px;
+
+  --nav-h:       80px;
+  --pad-section: 7rem 0;
+  --pad-hero:    10rem 2rem;
+}
+
+/* ============================================================
+   RESET & BASE
+============================================================ */
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  font-family: var(--font-b);
+  font-weight: 300;
+  color: var(--text);
+  background: var(--white);
+  line-height: 1.75;
+}
+
+img  { max-width: 100%; height: auto; display: block; }
+a    { color: inherit; text-decoration: none; }
+ul   { list-style: none; }
+
+p { margin-bottom: 1.35em; }
+p:last-child { margin-bottom: 0; }
+
+/* ============================================================
+   LAYOUT UTILITIES
+============================================================ */
+
+.wrap      { max-width: var(--width);    margin: 0 auto; padding: 0 2rem; }
+.wrap--mid { max-width: var(--width-mid); margin: 0 auto; padding: 0 2rem; }
+.wrap--sm  { max-width: var(--width-sm);  margin: 0 auto; padding: 0 2rem; }
+.center    { text-align: center; }
+
+.section        { padding: var(--pad-section); }
+.section--cream { background: var(--cream); }
+.section--green { background: var(--green); color: var(--cream); }
+.section--white { background: var(--white); }
+
+/* ============================================================
+   TYPOGRAPHY HELPERS
+============================================================ */
+
+.label {
+  font-family: var(--font-b);
+  font-size: 0.68rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  color: var(--gold);
+  display: block;
+  margin-bottom: 1.25rem;
+}
+
+.rule {
+  width: 36px;
+  height: 1px;
+  background: var(--gold);
+  margin: 0 auto 2.5rem;
+  display: block;
+}
+
+.rule--left { margin-left: 0; }
+
+/* ============================================================
+   BUTTONS
+============================================================ */
+
+.btn {
+  display: inline-block;
+  font-family: var(--font-b);
+  font-size: 0.72rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  padding: 1rem 2.75rem;
+  border: 1px solid currentColor;
+  transition: background 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.btn--light {
+  color: rgba(250, 247, 242, 0.85);
+  border-color: rgba(250, 247, 242, 0.45);
+}
+.btn--light:hover {
+  background: var(--cream);
+  border-color: var(--cream);
+  color: var(--green);
+}
+
+.btn--dark {
+  color: var(--green);
+  border-color: rgba(27, 58, 45, 0.45);
+}
+.btn--dark:hover {
+  background: var(--green);
+  color: var(--cream);
+  border-color: var(--green);
+}
+
+.btn--gold {
+  color: var(--gold);
+  border-color: rgba(181, 151, 90, 0.55);
+}
+.btn--gold:hover {
+  background: var(--gold);
+  color: var(--cream);
+  border-color: var(--gold);
+}
+
+/* ============================================================
+   NAVIGATION
+============================================================ */
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 200;
+  background: var(--green);
+  height: var(--nav-h);
+  display: flex;
+  align-items: center;
+}
+
+.nav-inner {
+  max-width: var(--width);
+  margin: 0 auto;
+  padding: 0 2rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.site-logo {
+  font-family: var(--font-h);
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: var(--cream);
+  letter-spacing: 0.04em;
+  white-space: nowrap;
+  line-height: 1;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 2.75rem;
+}
+
+.nav-links a {
+  font-family: var(--font-b);
+  font-size: 0.72rem;
+  font-weight: 400;
+  color: rgba(250, 247, 242, 0.65);
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  transition: color 0.25s ease;
+}
+
+.nav-links a:hover,
+.nav-links a.current {
+  color: var(--cream);
+}
+
+.nav-toggle {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+  background: none;
+  border: none;
+  padding: 6px;
+}
+
+.nav-toggle span {
+  display: block;
+  width: 22px;
+  height: 1px;
+  background: var(--cream);
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  transform-origin: center;
+}
+
+.nav-toggle.open span:nth-child(1) { transform: translateY(6px) rotate(45deg); }
+.nav-toggle.open span:nth-child(2) { opacity: 0; }
+.nav-toggle.open span:nth-child(3) { transform: translateY(-6px) rotate(-45deg); }
+
+/* ============================================================
+   HERO — FULL HEIGHT (Home)
+============================================================ */
+
+.hero {
+  min-height: calc(100vh - var(--nav-h));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: var(--pad-hero);
+  background: var(--green);
+  color: var(--cream);
+}
+
+.hero__inner {
+  max-width: 780px;
+}
+
+.hero__heading {
+  font-family: var(--font-h);
+  font-size: clamp(2.6rem, 7vw, 5.5rem);
+  font-weight: 300;
+  letter-spacing: 0.04em;
+  color: var(--cream);
+  margin-bottom: 1.5rem;
+  line-height: 1.1;
+}
+
+.hero__sub {
+  font-size: clamp(0.9rem, 1.8vw, 1.05rem);
+  font-weight: 300;
+  color: rgba(250, 247, 242, 0.65);
+  letter-spacing: 0.04em;
+  margin-bottom: 3rem;
+  max-width: 520px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero__word {
+  font-family: var(--font-h);
+  font-size: clamp(4.5rem, 11vw, 9rem);
+  font-style: italic;
+  font-weight: 300;
+  color: var(--gold);
+  line-height: 1;
+  margin-bottom: 3.5rem;
+  letter-spacing: -0.02em;
+  display: block;
+}
+
+/* PAGE HERO — shorter (Membership, Contact) */
+.page-hero {
+  padding: 5.5rem 2rem 5rem;
+  background: var(--green);
+  color: var(--cream);
+  text-align: center;
+}
+
+.page-hero__heading {
+  font-family: var(--font-h);
+  font-size: clamp(2.5rem, 6vw, 4.5rem);
+  font-weight: 300;
+  letter-spacing: 0.04em;
+  color: var(--cream);
+  margin-bottom: 1.25rem;
+  line-height: 1.1;
+}
+
+.page-hero__sub {
+  font-size: 0.72rem;
+  font-weight: 400;
+  color: rgba(250, 247, 242, 0.55);
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  margin-bottom: 1.75rem;
+}
+
+.page-hero__body {
+  font-size: 1rem;
+  line-height: 1.85;
+  color: rgba(250, 247, 242, 0.75);
+  max-width: 580px;
+  margin: 0 auto;
+}
+
+/* ============================================================
+   HOME — OUR PROMISE
+============================================================ */
+
+.promise__quote {
+  font-family: var(--font-h);
+  font-size: clamp(1.7rem, 3.8vw, 2.8rem);
+  font-style: italic;
+  font-weight: 300;
+  color: var(--green);
+  line-height: 1.3;
+  margin-bottom: 2.5rem;
+}
+
+.promise__body {
+  font-size: 1.05rem;
+  line-height: 1.9;
+  color: var(--text-mid);
+  margin-bottom: 2rem;
+}
+
+.promise__pillars {
+  font-family: var(--font-h);
+  font-size: 1.25rem;
+  font-style: italic;
+  color: var(--gold);
+  letter-spacing: 0.04em;
+}
+
+/* ============================================================
+   HOME — WHO WE SERVE
+============================================================ */
+
+.serve__heading {
+  font-family: var(--font-h);
+  font-size: clamp(1.8rem, 4vw, 3rem);
+  font-weight: 300;
+  color: var(--green);
+  margin-bottom: 2.5rem;
+  line-height: 1.2;
+}
+
+.serve__body {
+  font-size: 1.05rem;
+  line-height: 1.9;
+  color: var(--text-mid);
+  max-width: 740px;
+}
+
+.serve__body p { margin-bottom: 1.5rem; }
+
+/* ============================================================
+   HOME — WHAT WE DO (Services)
+============================================================ */
+
+.craft__heading {
+  font-family: var(--font-h);
+  font-size: clamp(1.8rem, 4vw, 3rem);
+  font-weight: 300;
+  color: var(--green);
+  margin-bottom: 3.5rem;
+  line-height: 1.2;
+}
+
+.craft-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border-top: 1px solid var(--border);
+}
+
+.craft-item {
+  padding: 2.75rem 2.5rem 2.75rem 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.craft-item:nth-child(2n) {
+  padding-left: 2.5rem;
+  padding-right: 0;
+  border-left: 1px solid var(--border);
+}
+
+.craft-item__num {
+  font-family: var(--font-h);
+  font-size: 0.85rem;
+  font-style: italic;
+  color: var(--gold);
+  display: block;
+  margin-bottom: 0.85rem;
+}
+
+.craft-item__title {
+  font-family: var(--font-h);
+  font-size: 1.45rem;
+  font-weight: 400;
+  color: var(--green);
+  margin-bottom: 1rem;
+  line-height: 1.2;
+}
+
+.craft-item__body {
+  font-size: 0.93rem;
+  line-height: 1.82;
+  color: var(--text-mid);
+}
+
+/* ============================================================
+   HOME — THE DIFFERENCE
+============================================================ */
+
+.diff__heading {
+  font-family: var(--font-h);
+  font-size: clamp(1.8rem, 4vw, 3rem);
+  font-weight: 300;
+  color: var(--cream);
+  margin-bottom: 3.5rem;
+  line-height: 1.2;
+}
+
+.diff-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem 5rem;
+}
+
+.diff-item__title {
+  font-family: var(--font-h);
+  font-size: 1.3rem;
+  font-style: italic;
+  font-weight: 400;
+  color: var(--gold);
+  margin-bottom: 0.85rem;
+  line-height: 1.3;
+}
+
+.diff-item__body {
+  font-size: 0.93rem;
+  line-height: 1.82;
+  color: rgba(250, 247, 242, 0.7);
+}
+
+/* ============================================================
+   CTA BLOCK
+============================================================ */
+
+.cta-block__heading {
+  font-family: var(--font-h);
+  font-size: clamp(1.7rem, 3.8vw, 2.6rem);
+  font-weight: 300;
+  color: var(--green);
+  margin-bottom: 1.25rem;
+  line-height: 1.25;
+}
+
+.cta-block__body {
+  font-size: 1rem;
+  line-height: 1.85;
+  color: var(--text-mid);
+  margin-bottom: 2.75rem;
+}
+
+/* ============================================================
+   MEMBERSHIP — FOUNDING MEMBERS
+============================================================ */
+
+.founding__heading {
+  font-family: var(--font-h);
+  font-size: clamp(1.7rem, 3.8vw, 2.6rem);
+  font-weight: 300;
+  color: var(--green);
+  margin-bottom: 1.25rem;
+  line-height: 1.25;
+}
+
+.founding__body {
+  font-size: 1rem;
+  line-height: 1.85;
+  color: var(--text-mid);
+}
+
+/* ============================================================
+   MEMBERSHIP — TIERS OVERVIEW
+============================================================ */
+
+.tiers-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  border: 1px solid var(--border);
+}
+
+.tier-card {
+  padding: 2.75rem;
+  border-right: 1px solid var(--border);
+  position: relative;
+}
+
+.tier-card:last-child { border-right: none; }
+
+.tier-card--featured {
+  background: var(--green);
+  color: var(--cream);
+}
+
+.tier-card__name {
+  font-family: var(--font-h);
+  font-size: 1.75rem;
+  font-weight: 300;
+  color: var(--green);
+  display: block;
+  margin-bottom: 0.75rem;
+  line-height: 1;
+}
+
+.tier-card--featured .tier-card__name { color: var(--cream); }
+
+.tier-card__desc {
+  font-size: 0.88rem;
+  line-height: 1.7;
+  color: var(--text-mid);
+  margin-bottom: 1.75rem;
+  font-style: italic;
+  font-family: var(--font-h);
+  font-size: 1rem;
+}
+
+.tier-card--featured .tier-card__desc { color: rgba(250, 247, 242, 0.65); }
+
+.tier-card__price {
+  font-family: var(--font-h);
+  font-size: 1.6rem;
+  font-weight: 300;
+  color: var(--green);
+  display: block;
+  line-height: 1;
+  margin-bottom: 0.35rem;
+}
+
+.tier-card--featured .tier-card__price { color: var(--gold); }
+
+.tier-card__price-note {
+  font-family: var(--font-b);
+  font-size: 0.72rem;
+  color: var(--text-mid);
+  letter-spacing: 0.05em;
+  display: block;
+}
+
+.tier-card--featured .tier-card__price-note { color: rgba(250, 247, 242, 0.45); }
+
+/* ============================================================
+   MEMBERSHIP — TIER DETAIL
+============================================================ */
+
+.tier-detail { padding: 6rem 0; }
+.tier-detail + .tier-detail { border-top: 1px solid var(--border); }
+
+.tier-detail__numeral {
+  font-family: var(--font-h);
+  font-size: 0.85rem;
+  font-style: italic;
+  color: var(--gold);
+  display: block;
+  margin-bottom: 1rem;
+  letter-spacing: 0.06em;
+}
+
+.tier-detail__name {
+  font-family: var(--font-h);
+  font-size: clamp(2.2rem, 5vw, 3.8rem);
+  font-weight: 300;
+  color: var(--green);
+  line-height: 1;
+  margin-bottom: 0.5rem;
+}
+
+.tier-detail__price {
+  font-family: var(--font-h);
+  font-size: 1.15rem;
+  font-style: italic;
+  color: var(--text-mid);
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.tier-detail__tagline {
+  font-size: 0.93rem;
+  font-style: italic;
+  color: var(--text-mid);
+  margin-bottom: 3.5rem;
+}
+
+.tier-detail__cols {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  gap: 3.5rem 5rem;
+  margin-top: 2.5rem;
+}
+
+.tier-detail__block + .tier-detail__block { margin-top: 2.5rem; }
+
+.tier-detail__block-label {
+  font-family: var(--font-b);
+  font-size: 0.65rem;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  color: var(--gold);
+  display: block;
+  margin-bottom: 1.1rem;
+}
+
+.tier-detail__list { margin: 0; }
+
+.tier-detail__list li {
+  font-size: 0.93rem;
+  line-height: 1.7;
+  color: var(--text);
+  padding: 0.55rem 0 0.55rem 1.25rem;
+  border-bottom: 1px solid var(--border);
+  position: relative;
+}
+
+.tier-detail__list li::before {
+  content: '—';
+  position: absolute;
+  left: 0;
+  color: var(--gold);
+  font-size: 0.75rem;
+  top: 0.65rem;
+}
+
+.tier-detail__list li:last-child { border-bottom: none; }
+
+.tier-detail__info {
+  font-size: 0.93rem;
+  line-height: 1.82;
+  color: var(--text-mid);
+}
+
+/* ============================================================
+   MEMBERSHIP — HOW IT WORKS
+============================================================ */
+
+.how__heading {
+  font-family: var(--font-h);
+  font-size: clamp(1.8rem, 4vw, 3rem);
+  font-weight: 300;
+  color: var(--green);
+  margin-bottom: 3.5rem;
+  line-height: 1.2;
+}
+
+.how-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem 5rem;
+}
+
+.how-item__label {
+  font-family: var(--font-b);
+  font-size: 0.65rem;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  color: var(--gold);
+  display: block;
+  margin-bottom: 0.85rem;
+}
+
+.how-item__body {
+  font-size: 0.93rem;
+  line-height: 1.82;
+  color: var(--text-mid);
+}
+
+/* ============================================================
+   CONTACT PAGE
+============================================================ */
+
+.contact-body {
+  padding: 6rem 0;
+  background: var(--cream);
+  text-align: center;
+}
+
+.contact-body__inner {
+  max-width: 520px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.contact-body__email {
+  font-family: var(--font-h);
+  font-size: clamp(1.3rem, 3vw, 2rem);
+  font-style: italic;
+  font-weight: 300;
+  color: var(--green);
+  display: block;
+  margin-bottom: 2.25rem;
+}
+
+.contact-body__note {
+  font-size: 0.88rem;
+  color: var(--text-mid);
+  line-height: 1.75;
+  margin-top: 2.5rem;
+  padding-top: 2.5rem;
+  border-top: 1px solid var(--border);
+}
+
+.contact-body__social {
+  margin-top: 1.75rem;
+}
+
+.contact-body__social a {
+  font-family: var(--font-b);
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  color: var(--text-mid);
+  transition: color 0.25s ease;
+}
+
+.contact-body__social a:hover { color: var(--gold); }
+
+/* ============================================================
+   FOOTER
+============================================================ */
+
+.site-footer {
+  background: var(--green);
+  padding: 4.5rem 0;
+}
+
+.footer-inner {
+  max-width: var(--width);
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 1.25rem;
+}
+
+.footer__wordmark {
+  font-family: var(--font-h);
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: var(--cream);
+  letter-spacing: 0.06em;
+}
+
+.footer__details {
+  font-size: 0.8rem;
+  font-weight: 300;
+  color: rgba(250, 247, 242, 0.5);
+  line-height: 1.9;
+  letter-spacing: 0.03em;
+}
+
+.footer__details a {
+  color: rgba(250, 247, 242, 0.5);
+  transition: color 0.25s ease;
+}
+
+.footer__details a:hover { color: var(--gold); }
+
+.footer__tagline {
+  font-family: var(--font-h);
+  font-size: 0.95rem;
+  font-style: italic;
+  font-weight: 300;
+  color: rgba(250, 247, 242, 0.38);
+}
+
+.footer__legal {
+  font-size: 0.68rem;
+  font-weight: 300;
+  color: rgba(250, 247, 242, 0.28);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+/* ============================================================
+   RESPONSIVE
+============================================================ */
+
+@media (max-width: 900px) {
+  .craft-grid  { grid-template-columns: 1fr; }
+  .craft-item  { padding: 2.25rem 0; }
+  .craft-item:nth-child(2n) { padding-left: 0; border-left: none; }
+
+  .diff-grid   { grid-template-columns: 1fr; gap: 2.5rem; }
+
+  .tiers-grid  { grid-template-columns: 1fr; }
+  .tier-card   { border-right: none; border-bottom: 1px solid var(--border); }
+  .tier-card:last-child { border-bottom: none; }
+
+  .tier-detail__cols { grid-template-columns: 1fr; gap: 2.5rem; }
+
+  .how-grid    { grid-template-columns: 1fr; gap: 2.5rem; }
+}
+
+@media (max-width: 680px) {
+  :root {
+    --nav-h: 64px;
+    --pad-section: 5rem 0;
+    --pad-hero: 6rem 1.5rem;
+  }
+
+  .nav-links {
+    display: none;
+    position: fixed;
+    top: var(--nav-h);
+    left: 0;
+    right: 0;
+    background: var(--green);
+    flex-direction: column;
+    align-items: center;
+    padding: 2.25rem 1.5rem;
+    gap: 2rem;
+    border-top: 1px solid var(--border-light);
+    box-shadow: 0 8px 32px rgba(0,0,0,0.25);
+  }
+
+  .nav-links.open { display: flex; }
+  .nav-links a     { font-size: 0.85rem; letter-spacing: 0.16em; }
+
+  .nav-toggle { display: flex; }
+
+  .wrap, .wrap--mid, .wrap--sm { padding: 0 1.5rem; }
+
+  .page-hero { padding: 4rem 1.5rem 3.5rem; }
+
+  .tier-detail { padding: 4rem 0; }
+  .contact-body { padding: 4rem 0; }
+}
