@@ -14,8 +14,6 @@
     <div class="nav-inner">
 
         <nav class="nav-left" aria-label="Primary navigation">
-            <a href="<?php echo esc_url( home_url( '/' ) ); ?>"
-               <?php echo ( is_front_page() || is_home() ) ? 'class="current" aria-current="page"' : ''; ?>>Home</a>
             <a href="<?php echo esc_url( home_url( '/membership/' ) ); ?>"
                <?php echo is_page( 'membership' ) ? 'class="current" aria-current="page"' : ''; ?>>Membership</a>
         </nav>
@@ -24,7 +22,7 @@
             <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/TJC-Logo.png"
                  alt="The Jaiye Concierge"
                  class="site-logo__img"
-                 height="68"
+                 height="136"
                  width="auto">
         </a>
 

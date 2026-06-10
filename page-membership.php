@@ -16,18 +16,6 @@ $t = esc_url( get_template_directory_uri() );
 </section>
 
 <!-- ============================================================
-     FOUNDING MEMBERS
-============================================================ -->
-<section class="founding-section">
-    <div class="container--sm center">
-        <span class="section-label">Founding Members</span>
-        <span class="brass-rule"></span>
-        <h2 class="founding-heading">The first three.</h2>
-        <p class="founding-body">We're opening Founding Membership to three clients per tier. The rate is locked for 24 months. Each Founding Member receives a tailored preferences workspace and the closeness that only comes from being there from the beginning.</p>
-    </div>
-</section>
-
-<!-- ============================================================
      TIER I — FOUNDATION
 ============================================================ -->
 <section class="tier-block tier-block--foundation">
