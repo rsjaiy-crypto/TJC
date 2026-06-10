@@ -14,7 +14,11 @@
     <div class="nav-inner">
 
         <a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="site-logo">
-            The Jaiye Concierge
+            <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/TJC-Logo.png"
+                 alt="The Jaiye Concierge"
+                 class="site-logo__img"
+                 height="38"
+                 width="auto">
         </a>
 
         <nav id="primary-nav" class="nav-links" aria-label="Primary navigation">

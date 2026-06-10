@@ -60,6 +60,67 @@
 </section>
 
 <!-- ============================================================
+     WHAT WE TAKE CARE OF
+============================================================ -->
+<section class="section section--white">
+    <div class="wrap">
+        <span class="label">What we take care of</span>
+        <?php $tdir = esc_url( get_template_directory_uri() ); ?>
+        <div class="membership-tiles-grid">
+
+            <div class="service-tile service-tile--sm" style="--tile-img: url('<?php echo $tdir; ?>/assets/membership-transport.jpeg');">
+                <div class="service-tile__inner">
+                    <h3 class="service-tile__title">Transport</h3>
+                </div>
+            </div>
+
+            <div class="service-tile service-tile--sm" style="--tile-img: url('<?php echo $tdir; ?>/assets/membership-health.jpeg');">
+                <div class="service-tile__inner">
+                    <h3 class="service-tile__title">Health Tourism</h3>
+                </div>
+            </div>
+
+            <div class="service-tile service-tile--sm" style="--tile-img: url('<?php echo $tdir; ?>/assets/membership-entertainment-experience-bookings.jpeg');">
+                <div class="service-tile__inner">
+                    <h3 class="service-tile__title">Entertainment &amp; Experiences</h3>
+                </div>
+            </div>
+
+            <div class="service-tile service-tile--sm" style="--tile-img: url('<?php echo $tdir; ?>/assets/membership-personal-shopping.jpeg');">
+                <div class="service-tile__inner">
+                    <h3 class="service-tile__title">Personal Shopping</h3>
+                </div>
+            </div>
+
+            <div class="service-tile service-tile--sm" style="--tile-img: url('<?php echo $tdir; ?>/assets/membership-reservations.jpeg');">
+                <div class="service-tile__inner">
+                    <h3 class="service-tile__title">Reservations</h3>
+                </div>
+            </div>
+
+            <div class="service-tile service-tile--sm" style="--tile-img: url('<?php echo $tdir; ?>/assets/membership-sporting-events.jpg');">
+                <div class="service-tile__inner">
+                    <h3 class="service-tile__title">Sporting Events</h3>
+                </div>
+            </div>
+
+            <div class="service-tile service-tile--sm" style="--tile-img: url('<?php echo $tdir; ?>/assets/membership-home-managment.jpeg');">
+                <div class="service-tile__inner">
+                    <h3 class="service-tile__title">Home Management</h3>
+                </div>
+            </div>
+
+            <div class="service-tile service-tile--sm" style="--tile-img: url('<?php echo $tdir; ?>/assets/memebership-special-event.jpeg');">
+                <div class="service-tile__inner">
+                    <h3 class="service-tile__title">Special Events</h3>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- ============================================================
      FOUNDATION DETAIL
 ============================================================ -->
 <section class="tier-detail section--white">

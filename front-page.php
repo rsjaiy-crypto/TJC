@@ -3,7 +3,9 @@
 <!-- ============================================================
      HERO
 ============================================================ -->
-<section class="hero" aria-label="Introduction">
+<section class="hero hero--bg"
+         style="--hero-bg: url('<?php echo esc_url( get_template_directory_uri() ); ?>/assets/Hero-Yacht.jpg');"
+         aria-label="Introduction">
     <div class="hero__inner">
         <h1 class="hero__heading">The Jaiye Concierge</h1>
         <p class="hero__sub">A private concierge service for Nigerians and the wider African diaspora.</p>
@@ -44,40 +46,97 @@
 </section>
 
 <!-- ============================================================
+     TRUSTED PARTNERS
+============================================================ -->
+<section class="section partners-section section--cream">
+    <div class="wrap center">
+        <span class="label">Trusted partners</span>
+        <div class="partners-grid">
+            <?php
+            $partners = [
+                'partner-Virtuoso.png'                          => 'Virtuoso',
+                'partner-Four-Seasons.png'                      => 'Four Seasons',
+                'partner-rosewood.png'                          => 'Rosewood',
+                'partner-dorchester-collection.png'             => 'Dorchester Collection',
+                'partner-Oetker-Collection.png'                 => 'Oetker Collection',
+                'partner-jumeirah.png'                          => 'Jumeirah',
+                'partner-one-only.png'                          => 'One&Only',
+                'Partner-Bellini-Club.png'                      => 'Bellini Club',
+                'partner-belmond-bellini-club.png'              => 'Belmond Bellini Club',
+                'partner-Design-Hotels.png'                     => 'Design Hotels',
+                'partner-The_Leading_Hotels-of-the-World.png'   => 'The Leading Hotels of the World',
+                'partner-preferred-hotels-and-resorts.png'      => 'Preferred Hotels & Resorts',
+                'partner-relais.png'                            => 'Relais & Châteaux',
+                'partner-slh.png'                               => 'Small Luxury Hotels',
+                'partner-Fontenille.png'                        => 'Fontenille',
+                'partner-Hyatt-Prive.png'                       => 'Hyatt Privé',
+                'partner-hilton-impresario.png'                 => 'Hilton Impresario',
+                'partner-InterContinental-Hotels-Group-Logo.png'=> 'IHG',
+                'partner-Omni.png'                              => 'Omni Hotels',
+                'partner-Standard-Hotels.png'                   => 'The Standard',
+                'partner-firmdale.png'                          => 'Firmdale Hotels',
+                'partner-mercer.png'                            => 'Mercer',
+                'partner-fan-club.png'                          => 'Fan Club',
+                'partner-pennclub.png'                          => 'Penn Club',
+                'partner-Club1897.png'                          => 'Club 1897',
+                'partner-COOLROOMS.png'                         => 'Cool Rooms',
+                'partner-Couture.png'                           => 'Couture',
+                'partner-RF.Knights.Black.png'                  => 'RF Knights',
+            ];
+            $base = esc_url( get_template_directory_uri() ) . '/assets/';
+            foreach ( $partners as $file => $alt ) :
+                $src = $base . $file;
+            ?>
+            <img src="<?php echo $src; ?>" alt="<?php echo esc_attr( $alt ); ?>" class="partner-logo" loading="lazy">
+            <?php endforeach; ?>
+        </div>
+    </div>
+</section>
+
+<!-- ============================================================
      WHAT WE DO
 ============================================================ -->
-<section class="section section--cream">
+<section class="section section--cream craft-section">
     <div class="wrap">
         <span class="label">What We Do</span>
         <h2 class="craft__heading">Four areas of craft.</h2>
+    </div>
 
-        <div class="craft-grid">
+    <?php $tdir = esc_url( get_template_directory_uri() ); ?>
+    <div class="craft-grid">
 
-            <div class="craft-item">
-                <span class="craft-item__num">I.</span>
-                <h3 class="craft-item__title">Travel design and management</h3>
-                <p class="craft-item__body">FORA-certified luxury travel advisory with global supplier perks. Multi-city itineraries, family travel, last-minute reroutes, private aviation when needed. Wake-up calls and flight tracking on travel days are standard.</p>
+        <div class="service-tile" style="--tile-img: url('<?php echo $tdir; ?>/assets/membership-transport.jpeg');">
+            <div class="service-tile__inner">
+                <span class="service-tile__num">I.</span>
+                <h3 class="service-tile__title">Travel design and management</h3>
+                <p class="service-tile__body">FORA-certified luxury travel advisory with global supplier perks. Multi-city itineraries, family travel, last-minute reroutes, private aviation when needed. Wake-up calls and flight tracking on travel days are standard.</p>
             </div>
-
-            <div class="craft-item">
-                <span class="craft-item__num">II.</span>
-                <h3 class="craft-item__title">Health tourism coordination</h3>
-                <p class="craft-item__body">Specialist consultations in London, end-to-end logistics from arrival to recovery, accompanying family considered. We don't give medical advice — we coordinate the people who do.</p>
-            </div>
-
-            <div class="craft-item">
-                <span class="craft-item__num">III.</span>
-                <h3 class="craft-item__title">Lifestyle and access</h3>
-                <p class="craft-item__body">Sold-out tables, private events, sporting and cultural occasions, weddings and milestone moments.</p>
-            </div>
-
-            <div class="craft-item">
-                <span class="craft-item__num">IV.</span>
-                <h3 class="craft-item__title">Personal logistics</h3>
-                <p class="craft-item__body">School visits, property viewings, document handling, cross-border shipping, household coordination. UK-based on-the-ground team for the things that have to happen in person.</p>
-            </div>
-
         </div>
+
+        <div class="service-tile" style="--tile-img: url('<?php echo $tdir; ?>/assets/membership-health.jpeg');">
+            <div class="service-tile__inner">
+                <span class="service-tile__num">II.</span>
+                <h3 class="service-tile__title">Health tourism coordination</h3>
+                <p class="service-tile__body">Specialist consultations in London, end-to-end logistics from arrival to recovery, accompanying family considered. We don't give medical advice — we coordinate the people who do.</p>
+            </div>
+        </div>
+
+        <div class="service-tile" style="--tile-img: url('<?php echo $tdir; ?>/assets/membership-entertainment-experience-bookings.jpeg');">
+            <div class="service-tile__inner">
+                <span class="service-tile__num">III.</span>
+                <h3 class="service-tile__title">Lifestyle and access</h3>
+                <p class="service-tile__body">Sold-out tables, private events, sporting and cultural occasions, weddings and milestone moments.</p>
+            </div>
+        </div>
+
+        <div class="service-tile" style="--tile-img: url('<?php echo $tdir; ?>/assets/membership-home-managment.jpeg');">
+            <div class="service-tile__inner">
+                <span class="service-tile__num">IV.</span>
+                <h3 class="service-tile__title">Personal logistics</h3>
+                <p class="service-tile__body">School visits, property viewings, document handling, cross-border shipping, household coordination. UK-based on-the-ground team for the things that have to happen in person.</p>
+            </div>
+        </div>
+
     </div>
 </section>
 

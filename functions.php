@@ -38,3 +38,11 @@ function tjc_assets() {
     );
 }
 add_action( 'wp_enqueue_scripts', 'tjc_assets' );
+
+function tjc_favicon() {
+    $icon = esc_url( get_template_directory_uri() ) . '/assets/TJC-Favicon.png';
+    echo '<link rel="icon" type="image/png" href="' . $icon . '">' . "\n";
+    echo '<link rel="shortcut icon" href="' . $icon . '">' . "\n";
+    echo '<link rel="apple-touch-icon" href="' . $icon . '">' . "\n";
+}
+add_action( 'wp_head', 'tjc_favicon' );
