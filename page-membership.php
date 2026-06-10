@@ -160,49 +160,57 @@ $t = esc_url( get_template_directory_uri() );
 
         <div class="mem-tile" style="--tile-img: url('<?php echo $t; ?>/assets/membership-transport.jpeg');">
             <div class="mem-tile__inner">
-                <h3 class="mem-tile__title">Transport</h3>
+                <h3 class="mem-tile__title">Private Travel</h3>
+                <p class="mem-tile__desc">FORA-certified luxury travel advisory, delivered through Jaiye Journeys. Multi-city itineraries, private aviation and last-minute reroutes — every journey handled from departure to return.</p>
             </div>
         </div>
 
         <div class="mem-tile" style="--tile-img: url('<?php echo $t; ?>/assets/membership-health.jpeg');">
             <div class="mem-tile__inner">
-                <h3 class="mem-tile__title">Health Tourism</h3>
+                <h3 class="mem-tile__title">Medical Concierge</h3>
+                <p class="mem-tile__desc">Specialist consultations, clinic coordination and end-to-end logistics from your first appointment to full recovery.</p>
+            </div>
+        </div>
+
+        <div class="mem-tile" style="--tile-img: url('<?php echo $t; ?>/assets/membership-reservations.jpeg');">
+            <div class="mem-tile__inner">
+                <h3 class="mem-tile__title">Table &amp; Venue Bookings</h3>
+                <p class="mem-tile__desc">The reservation you couldn't get. The table that wasn't available. Consider it handled.</p>
             </div>
         </div>
 
         <div class="mem-tile" style="--tile-img: url('<?php echo $t; ?>/assets/membership-entertainment-experience-bookings.jpeg');">
             <div class="mem-tile__inner">
-                <h3 class="mem-tile__title">Entertainment &amp; Experiences</h3>
+                <h3 class="mem-tile__title">Event &amp; Experience Bookings</h3>
+                <p class="mem-tile__desc">Concerts, cultural moments, private viewings and experiences worth remembering — sourced and secured.</p>
+            </div>
+        </div>
+
+        <div class="mem-tile" style="--tile-img: url('<?php echo $t; ?>/assets/membership-sporting-events.jpg');">
+            <div class="mem-tile__inner">
+                <h3 class="mem-tile__title">Sporting Event Bookings</h3>
+                <p class="mem-tile__desc">Hospitality, tickets and access for the fixtures, races and tournaments that matter to you.</p>
+            </div>
+        </div>
+
+        <div class="mem-tile" style="--tile-img: url('<?php echo $t; ?>/assets/memebership-special-event.jpeg');">
+            <div class="mem-tile__inner">
+                <h3 class="mem-tile__title">Special Occasions &amp; Celebrations</h3>
+                <p class="mem-tile__desc">Milestone birthdays, anniversaries and private celebrations, designed around the people who matter most.</p>
             </div>
         </div>
 
         <div class="mem-tile" style="--tile-img: url('<?php echo $t; ?>/assets/membership-personal-shopping.jpeg');">
             <div class="mem-tile__inner">
                 <h3 class="mem-tile__title">Personal Shopping</h3>
-            </div>
-        </div>
-
-        <div class="mem-tile" style="--tile-img: url('<?php echo $t; ?>/assets/membership-reservations.jpeg');">
-            <div class="mem-tile__inner">
-                <h3 class="mem-tile__title">Reservations</h3>
-            </div>
-        </div>
-
-        <div class="mem-tile" style="--tile-img: url('<?php echo $t; ?>/assets/membership-sporting-events.jpg');">
-            <div class="mem-tile__inner">
-                <h3 class="mem-tile__title">Sporting Events</h3>
+                <p class="mem-tile__desc">Dedicated access to the collections, boutiques and pieces worth owning.</p>
             </div>
         </div>
 
         <div class="mem-tile" style="--tile-img: url('<?php echo $t; ?>/assets/membership-home-managment.jpeg');">
             <div class="mem-tile__inner">
-                <h3 class="mem-tile__title">Home Management</h3>
-            </div>
-        </div>
-
-        <div class="mem-tile" style="--tile-img: url('<?php echo $t; ?>/assets/memebership-special-event.jpeg');">
-            <div class="mem-tile__inner">
-                <h3 class="mem-tile__title">Special Events</h3>
+                <h3 class="mem-tile__title">Household &amp; Estate Management</h3>
+                <p class="mem-tile__desc">Comprehensive support to keep every part of your household in order. Property viewings, document handling, cross-border shipping and household coordination, all taken care of.</p>
             </div>
         </div>
 

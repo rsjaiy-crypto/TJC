@@ -16,9 +16,9 @@ $t = esc_url( get_template_directory_uri() );
     </div>
 
     <div class="hero-content">
-        <h1 class="hero-heading">The Jaiye Concierge</h1>
-        <p class="hero-sub">A private concierge service for Nigerians and the wider African diaspora.</p>
+        <img src="<?php echo $t; ?>/assets/TJC-Logo-Hero.png" alt="The Jaiye Concierge" class="hero-logo">
         <em class="hero-word">Enjoy.</em>
+        <p class="hero-sub">A private concierge service for Nigerians and the wider African diaspora.</p>
         <a href="<?php echo esc_url( home_url( '/membership/' ) ); ?>" class="btn-outline">
             Explore Membership
         </a>
