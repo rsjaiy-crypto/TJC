@@ -16,6 +16,7 @@ $t = esc_url( get_template_directory_uri() );
     </div>
 
     <div class="hero-content">
+        <span class="hero-eyebrow">The Jaiye Concierge</span>
         <em class="hero-word">Enjoy.</em>
         <p class="hero-sub">A private members' concierge. London based, globally connected.</p>
         <a href="<?php echo esc_url( home_url( '/membership/' ) ); ?>" class="btn-outline">
