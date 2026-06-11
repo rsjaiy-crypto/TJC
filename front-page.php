@@ -157,7 +157,7 @@ $partners = [
         <div class="craft-tile" style="--tile-img: url('<?php echo $t; ?>/assets/membership-health.jpeg');">
             <span class="craft-tile__num">II.</span>
             <div class="craft-tile__inner">
-                <h3 class="craft-tile__title">Health tourism coordination</h3>
+                <h3 class="craft-tile__title">Medical Concierge</h3>
                 <p class="craft-tile__body">Specialist consultations in London, end-to-end logistics from arrival to recovery, accompanying family considered. We don't give medical advice — we coordinate the people who do.</p>
             </div>
         </div>
