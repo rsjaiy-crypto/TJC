@@ -13,7 +13,7 @@ add_action( 'after_setup_theme', 'tjc_setup' );
 function tjc_assets() {
     wp_enqueue_style(
         'tjc-fonts',
-        'https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Jost:wght@300;400;500&display=swap',
+        'https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,400;0,500;1,400;1,500&family=Jost:wght@300;400;500&family=Playfair+Display:ital,wght@0,400;0,500;1,400;1,500&display=swap',
         [],
         null
     );
