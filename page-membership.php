@@ -33,7 +33,7 @@ $t = esc_url( get_template_directory_uri() );
                 <ul class="tier-list">
                     <li>Travel design and management, with FORA supplier perks</li>
                     <li>Lifestyle access: private events, cultural occasions, sold-out tables</li>
-                    <li>Light personal logistics (one or two requests per month)</li>
+                    <li>Light personal logistics, one or two requests per month</li>
                     <li>Quarterly check-in call</li>
                     <li>Pass-through costs reimbursed within 7 days, no markup</li>
                 </ul>
@@ -41,11 +41,11 @@ $t = esc_url( get_template_directory_uri() );
             <div>
                 <div class="tier-info-block">
                     <span class="tier-block-label">Response</span>
-                    <p class="tier-info">WhatsApp and email Monday to Friday during working hours. Response within 4 working hours. Booked calls Tuesday to Thursday.</p>
+                    <p class="tier-info">Within 4 working hours, Monday to Friday. WhatsApp and email. Booked calls Tuesday to Thursday.</p>
                 </div>
                 <div class="tier-info-block">
                     <span class="tier-block-label">Who's covered</span>
-                    <p class="tier-info">Principal client. Occasional partner request handled. Family covered separately on enquiry.</p>
+                    <p class="tier-info">Principal client. Occasional partner requests handled. Wider family covered on enquiry.</p>
                 </div>
             </div>
         </div>
@@ -70,22 +70,21 @@ $t = esc_url( get_template_directory_uri() );
                 <span class="tier-block-label">Included</span>
                 <ul class="tier-list">
                     <li>Everything in Foundation</li>
-                    <li>Same-day response during working hours</li>
-                    <li>Medical concierge support. One medical journey per year, with accompanying logistics</li>
+                    <li>Medical concierge support: one medical journey per year, with accompanying logistics</li>
                     <li>Full personal logistics: viewings, document runs, cross-border shipping</li>
-                    <li>Direct WhatsApp access to Steph during working hours</li>
                     <li>High-touch travel detailing: flight tracking, wake-up calls, in-destination support</li>
+                    <li>Direct WhatsApp access to Steph</li>
                     <li>Annual planning session</li>
                 </ul>
             </div>
             <div>
                 <div class="tier-info-block">
                     <span class="tier-block-label">Response</span>
-                    <p class="tier-info">Same-day during working hours. Active travel days covered in real time wherever the client is flying.</p>
+                    <p class="tier-info">Same day during working hours. Active travel days covered in real time, wherever you are flying.</p>
                 </div>
                 <div class="tier-info-block">
                     <span class="tier-block-label">Who's covered</span>
-                    <p class="tier-info">Principal plus partner (full coverage). Children under 18 included for occasional requests such as family travel and events.</p>
+                    <p class="tier-info">Principal and partner, in full. Children under 18 included for occasional requests such as family travel and events.</p>
                 </div>
             </div>
         </div>
@@ -110,21 +109,20 @@ $t = esc_url( get_template_directory_uri() );
                 <span class="tier-block-label">Included</span>
                 <ul class="tier-list">
                     <li>Everything in Signature</li>
-                    <li>Priority response and limited out-of-hours access for genuine emergencies</li>
                     <li>Unlimited domestic travel design and bookings</li>
                     <li>Two medical concierge journeys per year</li>
-                    <li>Bespoke high-touch: proactive trip prep, surprise occasion planning, the kind of access most people don't know to ask for</li>
+                    <li>Proactive service: trip preparation, surprise occasions, the kind of access most people don't know to ask for</li>
                     <li>Annual in-person lifestyle audit</li>
                 </ul>
             </div>
             <div>
                 <div class="tier-info-block">
                     <span class="tier-block-label">Response</span>
-                    <p class="tier-info">Within 30 minutes during working hours. Within 2 hours out of hours. Designated emergency line for travel disruption, medical, family.</p>
+                    <p class="tier-info">Within 30 minutes during working hours, within 2 hours outside them. A designated emergency line for travel, medical and family matters.</p>
                 </div>
                 <div class="tier-info-block">
                     <span class="tier-block-label">Who's covered</span>
-                    <p class="tier-info">Principal plus immediate family: partner, children under 18, parents if living with or regularly visiting. Household staff coordination included.</p>
+                    <p class="tier-info">Principal and immediate family: partner, children under 18, and parents living with or regularly visiting. Household staff coordination included.</p>
                 </div>
             </div>
         </div>
@@ -167,7 +165,7 @@ $t = esc_url( get_template_directory_uri() );
         <div class="mem-tile" style="--tile-img: url('<?php echo $t; ?>/assets/membership-entertainment-experience-bookings.jpeg');">
             <div class="mem-tile__inner">
                 <h3 class="mem-tile__title">Event &amp; Experience Bookings</h3>
-                <p class="mem-tile__desc">Concerts, cultural moments, private viewings and experiences worth remembering. Sourced and secured.</p>
+                <p class="mem-tile__desc">Concerts, premieres, private viewings and cultural moments. Sourced quietly, secured early.</p>
             </div>
         </div>
 
@@ -188,14 +186,14 @@ $t = esc_url( get_template_directory_uri() );
         <div class="mem-tile" style="--tile-img: url('<?php echo $t; ?>/assets/membership-personal-shopping.jpeg');">
             <div class="mem-tile__inner">
                 <h3 class="mem-tile__title">Personal Shopping</h3>
-                <p class="mem-tile__desc">Dedicated access to the collections, boutiques and pieces worth owning.</p>
+                <p class="mem-tile__desc">Private access to collections, boutiques and the pieces that rarely reach the floor.</p>
             </div>
         </div>
 
         <div class="mem-tile" style="--tile-img: url('<?php echo $t; ?>/assets/membership-home-managment.jpeg');">
             <div class="mem-tile__inner">
                 <h3 class="mem-tile__title">Household &amp; Estate Management</h3>
-                <p class="mem-tile__desc">Comprehensive support to keep every part of your household in order. Property viewings, document handling, cross-border shipping and household coordination, all taken care of.</p>
+                <p class="mem-tile__desc">Every part of your household kept in quiet order. Property viewings, document handling, cross-border shipping and staff coordination.</p>
             </div>
         </div>
 

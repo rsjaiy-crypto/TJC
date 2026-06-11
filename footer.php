@@ -19,7 +19,7 @@
         </nav>
 
         <div class="footer-right">
-            <p class="footer-tagline">A private concierge service for Nigerians and the wider African diaspora.</p>
+            <p class="footer-tagline">London based. Globally connected.<br>Deliberately few.</p>
             <p class="footer-legal">&copy; 2026 Jaiye International Ltd. All rights reserved.</p>
         </div>
 
