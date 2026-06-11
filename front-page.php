@@ -147,32 +147,32 @@ $partners = [
     <div class="craft-grid">
 
         <div class="craft-tile" style="--tile-img: url('<?php echo $t; ?>/assets/membership-transport.jpeg');">
+            <span class="craft-tile__num">I.</span>
             <div class="craft-tile__inner">
-                <span class="craft-tile__num">I.</span>
                 <h3 class="craft-tile__title">Travel design and management</h3>
                 <p class="craft-tile__body">FORA-certified luxury travel advisory with global supplier perks. Multi-city itineraries, family travel, last-minute reroutes, private aviation when needed. Wake-up calls and flight tracking on travel days are standard.</p>
             </div>
         </div>
 
         <div class="craft-tile" style="--tile-img: url('<?php echo $t; ?>/assets/membership-health.jpeg');">
+            <span class="craft-tile__num">II.</span>
             <div class="craft-tile__inner">
-                <span class="craft-tile__num">II.</span>
                 <h3 class="craft-tile__title">Health tourism coordination</h3>
                 <p class="craft-tile__body">Specialist consultations in London, end-to-end logistics from arrival to recovery, accompanying family considered. We don't give medical advice — we coordinate the people who do.</p>
             </div>
         </div>
 
         <div class="craft-tile" style="--tile-img: url('<?php echo $t; ?>/assets/membership-entertainment-experience-bookings.jpeg');">
+            <span class="craft-tile__num">III.</span>
             <div class="craft-tile__inner">
-                <span class="craft-tile__num">III.</span>
                 <h3 class="craft-tile__title">Lifestyle and access</h3>
                 <p class="craft-tile__body">Sold-out tables, private events, sporting and cultural occasions, weddings and milestone moments.</p>
             </div>
         </div>
 
         <div class="craft-tile" style="--tile-img: url('<?php echo $t; ?>/assets/membership-home-managment.jpeg');">
+            <span class="craft-tile__num">IV.</span>
             <div class="craft-tile__inner">
-                <span class="craft-tile__num">IV.</span>
                 <h3 class="craft-tile__title">Personal logistics</h3>
                 <p class="craft-tile__body">School visits, property viewings, document handling, cross-border shipping, household coordination. UK-based on-the-ground team for the things that have to happen in person.</p>
             </div>
