@@ -491,7 +491,8 @@ p:last-child { margin-bottom: 0; }
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: center;
+  align-items: center;
 }
 .craft-tile::before {
   content: '';
@@ -520,7 +521,9 @@ p:last-child { margin-bottom: 0; }
 .craft-tile__inner {
   position: relative;
   z-index: 1;
-  padding: 1.75rem 1.75rem 1.75rem;
+  width: 88%;
+  padding: 1.5rem 0;
+  text-align: center;
 }
 
 .craft-tile__title {
@@ -530,10 +533,6 @@ p:last-child { margin-bottom: 0; }
   color: #f5e9db;
   line-height: 1.2;
   margin-bottom: 0;
-  transition: transform 0.3s ease;
-}
-.craft-tile:hover .craft-tile__title {
-  transform: translateY(-4px);
 }
 
 .craft-tile__body {
@@ -930,7 +929,8 @@ p:last-child { margin-bottom: 0; }
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: center;
+  align-items: center;
 }
 
 .mem-tile::before {
@@ -948,7 +948,9 @@ p:last-child { margin-bottom: 0; }
 .mem-tile__inner {
   position: relative;
   z-index: 1;
-  padding: 1.25rem 1.5rem 1.5rem;
+  width: 88%;
+  padding: 1.25rem 0;
+  text-align: center;
 }
 
 .mem-tile__title {
@@ -958,10 +960,6 @@ p:last-child { margin-bottom: 0; }
   color: #f5e9db;
   line-height: 1.2;
   margin-bottom: 0;
-  transition: transform 0.3s ease;
-}
-.mem-tile:hover .mem-tile__title {
-  transform: translateY(-4px);
 }
 
 .mem-tile__desc {
@@ -1086,10 +1084,16 @@ p:last-child { margin-bottom: 0; }
   font-weight: 300;
   color: var(--cream);
   display: block;
-  margin-bottom: 2.75rem;
-  transition: opacity 0.25s ease;
+  margin-bottom: 0.6rem;
 }
-.contact-email-link:hover { opacity: 0.75; }
+
+.contact-email-note {
+  font-family: var(--font-b);
+  font-size: 0.75rem;
+  font-weight: 300;
+  color: rgba(245, 233, 219, 0.4);
+  margin-bottom: 2.75rem;
+}
 
 .contact-note {
   font-family: var(--font-b);
@@ -1134,7 +1138,7 @@ p:last-child { margin-bottom: 0; }
 }
 
 .footer-logo img {
-  height: 32px;
+  height: 48px;
   width: auto;
 }
 

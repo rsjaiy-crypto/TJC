@@ -6,12 +6,14 @@
 
         <h1 class="contact-heading">Begin<br>here.</h1>
 
-        <a href="mailto:enjoy@thejaiyeconcierge.com" class="contact-email-link">
-            enjoy@thejaiyeconcierge.com
-        </a>
+        <p class="contact-email-link">enjoy@thejaiyeconcierge.com</p>
+        <p class="contact-email-note">Prefer email? Write to us directly.</p>
 
-        <a href="mailto:enjoy@thejaiyeconcierge.com" class="btn-outline">
-            Send an email
+        <a href="https://wa.me/message/2CNQM6SDUSMAE1"
+           class="btn-outline"
+           target="_blank"
+           rel="noopener noreferrer">
+            Start a conversation on WhatsApp
         </a>
 
         <p class="contact-note">
