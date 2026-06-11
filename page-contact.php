@@ -6,8 +6,7 @@
 
         <h1 class="contact-heading">Begin<br>here.</h1>
 
-        <p class="contact-email-link">enjoy@thejaiyeconcierge.com</p>
-        <p class="contact-email-note">Prefer email? Write to us directly.</p>
+        <p class="contact-intro">Tell us about yourself and what you're looking for. We'll take it from there.</p>
 
         <a href="https://wa.me/message/2CNQM6SDUSMAE1"
            class="btn-outline"
@@ -15,6 +14,9 @@
            rel="noopener noreferrer">
             Start a conversation on WhatsApp
         </a>
+
+        <p class="contact-email-link">enjoy@thejaiyeconcierge.com</p>
+        <p class="contact-email-note">Prefer email? Write to us directly.</p>
 
         <p class="contact-note">
             No forms. No auto-responses.<br>

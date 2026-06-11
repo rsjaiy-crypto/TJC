@@ -17,9 +17,10 @@ function tjc_assets() {
         [],
         null
     );
-    wp_enqueue_style( 'tjc-style', get_stylesheet_uri(), [ 'tjc-fonts' ], '3.0.0' );
-    wp_enqueue_script( 'tjc-nav',      get_template_directory_uri() . '/js/navigation.js', [], '3.0.0', true );
-    wp_enqueue_script( 'tjc-carousel', get_template_directory_uri() . '/js/carousel.js',   [], '3.0.0', true );
+    wp_enqueue_style( 'tjc-style', get_stylesheet_uri(), [ 'tjc-fonts' ], '3.1.0' );
+    wp_enqueue_script( 'tjc-nav',          get_template_directory_uri() . '/js/navigation.js',    [], '3.1.0', true );
+    wp_enqueue_script( 'tjc-carousel',     get_template_directory_uri() . '/js/carousel.js',      [], '3.1.0', true );
+    wp_enqueue_script( 'tjc-scroll-reveal', get_template_directory_uri() . '/js/scroll-reveal.js', [], '3.1.0', true );
 }
 add_action( 'wp_enqueue_scripts', 'tjc_assets' );
 
@@ -30,3 +31,28 @@ function tjc_favicon() {
     echo '<link rel="apple-touch-icon" href="' . $icon . '">' . "\n";
 }
 add_action( 'wp_head', 'tjc_favicon' );
+
+function tjc_document_title_parts( $title ) {
+    if ( is_front_page() ) {
+        return [
+            'title'   => 'The Jaiye Concierge',
+            'tagline' => 'Private Concierge for the African Diaspora',
+        ];
+    }
+    $title['site'] = 'The Jaiye Concierge';
+    unset( $title['tagline'] );
+    return $title;
+}
+add_filter( 'document_title_parts', 'tjc_document_title_parts' );
+
+function tjc_title_separator() {
+    return '|';
+}
+add_filter( 'document_title_separator', 'tjc_title_separator' );
+
+function tjc_meta_description() {
+    if ( is_front_page() ) {
+        echo '<meta name="description" content="A private members concierge for Nigerians and the wider African diaspora. Travel, health, access and lifestyle, handled with cultural fluency. London based, globally connected.">' . "\n";
+    }
+}
+add_action( 'wp_head', 'tjc_meta_description' );

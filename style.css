@@ -3,7 +3,7 @@ Theme Name: The Jaiye Concierge
 Theme URI: https://thejaiyeconcierge.com
 Author: The Jaiye Concierge
 Description: A private concierge service for Nigerians and the wider African diaspora.
-Version: 3.0.0
+Version: 3.1.0
 Requires at least: 6.0
 Requires PHP: 8.0
 License: Private
@@ -1080,6 +1080,16 @@ p:last-child { margin-bottom: 0; }
   margin-bottom: 4rem;
 }
 
+.contact-intro {
+  font-family: var(--font-b);
+  font-size: 1rem;
+  font-weight: 300;
+  color: rgba(245, 233, 219, 0.7);
+  line-height: 1.65;
+  max-width: 480px;
+  margin: 0 auto 2.5rem;
+}
+
 .contact-email-link {
   font-family: var(--font-display);
   font-size: clamp(1.4rem, 3.5vw, 2.5rem);
@@ -1087,6 +1097,7 @@ p:last-child { margin-bottom: 0; }
   font-weight: 300;
   color: var(--cream);
   display: block;
+  margin-top: 2.5rem;
   margin-bottom: 0.6rem;
 }
 
@@ -1275,4 +1286,24 @@ p:last-child { margin-bottom: 0; }
 
   .contact-hero { padding: 4rem 1.5rem 3.5rem; }
   .contact-heading { font-size: clamp(3.5rem, 14vw, 6rem); }
+}
+
+/* ============================================================
+   SCROLL REVEAL
+============================================================ */
+.reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+.reveal--visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+@media (prefers-reduced-motion: reduce) {
+  .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
 }

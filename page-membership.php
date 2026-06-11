@@ -11,7 +11,7 @@ $t = esc_url( get_template_directory_uri() );
         <span class="page-hero-label">The Jaiye Concierge</span>
         <h1 class="page-hero-heading">Membership</h1>
         <p class="page-hero-sub">Three ways to work together.</p>
-        <p class="page-hero-body">TJC is a private retainer service. Membership is not a subscription — it's an ongoing working relationship. We keep the client list small so the service stays personal.</p>
+        <p class="page-hero-body">TJC is a private retainer service. Membership is not a subscription. It's an ongoing working relationship. We keep the client list small so the service stays personal.</p>
     </div>
 </section>
 
@@ -24,8 +24,8 @@ $t = esc_url( get_template_directory_uri() );
         <span class="tier-numeral">I.</span>
         <h2 class="tier-name">Foundation</h2>
         <span class="tier-price">£1,750 / month</span>
-        <span class="tier-billing">Billed quarterly in advance · Founding Member rate locked for 24 months</span>
-        <p class="tier-tagline">The entry tier — for occasional and seasonal use.</p>
+        <span class="tier-billing">Billed quarterly in advance.</span>
+        <p class="tier-tagline">The entry tier, for occasional and seasonal use.</p>
         <span class="tier-divider"></span>
 
         <div class="tier-cols">
@@ -33,7 +33,7 @@ $t = esc_url( get_template_directory_uri() );
                 <span class="tier-block-label">Included</span>
                 <ul class="tier-list">
                     <li>Travel design and management, with FORA supplier perks</li>
-                    <li>Lifestyle access — private events, cultural occasions, sold-out tables</li>
+                    <li>Lifestyle access: private events, cultural occasions, sold-out tables</li>
                     <li>Light personal logistics (one or two requests per month)</li>
                     <li>Quarterly check-in call</li>
                     <li>Pass-through costs reimbursed within 7 days, no markup</li>
@@ -63,8 +63,8 @@ $t = esc_url( get_template_directory_uri() );
         <span class="tier-numeral">II.</span>
         <h2 class="tier-name">Signature</h2>
         <span class="tier-price">£2,750 / month</span>
-        <span class="tier-billing">Billed quarterly in advance · Founding Member rate locked for 24 months</span>
-        <p class="tier-tagline">The core tier — for regular use, where most clients sit.</p>
+        <span class="tier-billing">Billed quarterly in advance.</span>
+        <p class="tier-tagline">The core tier, for regular use, where most clients sit.</p>
         <span class="tier-divider"></span>
 
         <div class="tier-cols" style="text-align:left;">
@@ -73,10 +73,10 @@ $t = esc_url( get_template_directory_uri() );
                 <ul class="tier-list">
                     <li>Everything in Foundation</li>
                     <li>Same-day response during working hours</li>
-                    <li>Health tourism coordination — one medical journey per year, accompanying logistics</li>
-                    <li>Full personal logistics — school visits, viewings, document runs, cross-border shipping</li>
+                    <li>Medical concierge support. One medical journey per year, with accompanying logistics</li>
+                    <li>Full personal logistics: viewings, document runs, cross-border shipping</li>
                     <li>Direct WhatsApp access to Steph during working hours</li>
-                    <li>High-touch travel detailing — flight tracking, wake-up calls, in-destination support</li>
+                    <li>High-touch travel detailing: flight tracking, wake-up calls, in-destination support</li>
                     <li>Annual planning session</li>
                 </ul>
             </div>
@@ -87,7 +87,7 @@ $t = esc_url( get_template_directory_uri() );
                 </div>
                 <div class="tier-info-block">
                     <span class="tier-block-label">Who's covered</span>
-                    <p class="tier-info">Principal plus partner (full coverage). Children under 18 included for occasional requests — school, family travel, events.</p>
+                    <p class="tier-info">Principal plus partner (full coverage). Children under 18 included for occasional requests such as family travel and events.</p>
                 </div>
             </div>
         </div>
@@ -104,8 +104,8 @@ $t = esc_url( get_template_directory_uri() );
         <span class="tier-numeral">III.</span>
         <h2 class="tier-name">Bespoke</h2>
         <span class="tier-price">£4,500 / month</span>
-        <span class="tier-billing">Billed quarterly in advance · Founding Member rate locked for 24 months</span>
-        <p class="tier-tagline">The full retainer — for clients who want to think about almost nothing.</p>
+        <span class="tier-billing">Billed quarterly in advance.</span>
+        <p class="tier-tagline">The full retainer, for clients who want to think about almost nothing.</p>
         <span class="tier-divider"></span>
 
         <div class="tier-cols" style="text-align:left;">
@@ -115,8 +115,8 @@ $t = esc_url( get_template_directory_uri() );
                     <li>Everything in Signature</li>
                     <li>Priority response and limited out-of-hours access for genuine emergencies</li>
                     <li>Unlimited domestic travel design and bookings</li>
-                    <li>Two health tourism journeys per year</li>
-                    <li>Bespoke high-touch — proactive trip prep, surprise occasion planning, the kind of access most people don't know to ask for</li>
+                    <li>Two medical concierge journeys per year</li>
+                    <li>Bespoke high-touch: proactive trip prep, surprise occasion planning, the kind of access most people don't know to ask for</li>
                     <li>Annual in-person lifestyle audit</li>
                 </ul>
             </div>
@@ -127,7 +127,7 @@ $t = esc_url( get_template_directory_uri() );
                 </div>
                 <div class="tier-info-block">
                     <span class="tier-block-label">Who's covered</span>
-                    <p class="tier-info">Principal plus immediate family — partner, children under 18, parents if living with or regularly visiting. Household staff coordination included.</p>
+                    <p class="tier-info">Principal plus immediate family: partner, children under 18, parents if living with or regularly visiting. Household staff coordination included.</p>
                 </div>
             </div>
         </div>
@@ -149,7 +149,7 @@ $t = esc_url( get_template_directory_uri() );
         <div class="mem-tile" style="--tile-img: url('<?php echo $t; ?>/assets/membership-transport.jpeg');">
             <div class="mem-tile__inner">
                 <h3 class="mem-tile__title">Private Travel</h3>
-                <p class="mem-tile__desc">FORA-certified luxury travel advisory, delivered through Jaiye Journeys. Multi-city itineraries, private aviation and last-minute reroutes — every journey handled from departure to return.</p>
+                <p class="mem-tile__desc">FORA-certified luxury travel advisory, delivered through Jaiye Journeys. Multi-city itineraries, private aviation and last-minute reroutes. Every journey handled from departure to return.</p>
             </div>
         </div>
 
@@ -170,7 +170,7 @@ $t = esc_url( get_template_directory_uri() );
         <div class="mem-tile" style="--tile-img: url('<?php echo $t; ?>/assets/membership-entertainment-experience-bookings.jpeg');">
             <div class="mem-tile__inner">
                 <h3 class="mem-tile__title">Event &amp; Experience Bookings</h3>
-                <p class="mem-tile__desc">Concerts, cultural moments, private viewings and experiences worth remembering — sourced and secured.</p>
+                <p class="mem-tile__desc">Concerts, cultural moments, private viewings and experiences worth remembering. Sourced and secured.</p>
             </div>
         </div>
 
@@ -217,12 +217,12 @@ $t = esc_url( get_template_directory_uri() );
 
             <div>
                 <span class="how-item__label">Billing</span>
-                <p class="how-item__body">Quarterly in advance. Founding Members commit to a six-month minimum. Annual billing available at 10% discount after the first six months.</p>
+                <p class="how-item__body">Quarterly in advance, with a six-month minimum commitment. Annual billing available at 10% discount after the first six months.</p>
             </div>
 
             <div>
                 <span class="how-item__label">Communication</span>
-                <p class="how-item__body">WhatsApp for live requests. Email for documents and records. Booked calls Tuesday to Thursday. A private workspace holds preferences, contacts, and key dates internally — clients don't need to manage anything.</p>
+                <p class="how-item__body">WhatsApp for live requests. Email for documents and records. Booked calls Tuesday to Thursday. A private workspace holds preferences, contacts, and key dates internally. Clients don't need to manage anything.</p>
             </div>
 
             <div>
@@ -257,7 +257,7 @@ $t = esc_url( get_template_directory_uri() );
         <span class="section-label">Begin</span>
         <span class="brass-rule"></span>
         <h2 class="page-cta-heading">Ready to begin?</h2>
-        <p class="page-cta-body">Membership starts with a private conversation — no pitch deck, no sales call. Just a chance for us to understand your life, and for you to decide whether we're the right people for it.</p>
+        <p class="page-cta-body">Membership starts with a private conversation. No pitch deck, no sales call. Just a chance for us to understand your life, and for you to decide whether we're the right people for it.</p>
         <a href="<?php echo esc_url( home_url( '/contact/' ) ); ?>" class="btn-outline">
             Get in touch
         </a>

@@ -112,7 +112,7 @@ $partners = [
           if (el) el.textContent = quotes[Math.floor(Math.random() * quotes.length)];
         })();
         </script>
-        <p class="promise-body">We exist for the people who have built lives worth enjoying — and don't always have the time to enjoy them. Our job is to take the friction out, so the moments you actually live for are the ones you remember.</p>
+        <p class="promise-body">We exist for the people who have built lives worth enjoying, who don't always have the time to enjoy them. Our job is to take the friction out, so the moments you actually live for are the ones you remember.</p>
         <p class="promise-pillars">Travel. Health. Access. Enjoyment.</p>
     </div>
 </section>
@@ -126,8 +126,8 @@ $partners = [
         <div class="who-grid">
             <h2 class="who-heading">Designed for the way you actually live.</h2>
             <div class="who-body">
-                <p>London is part of your life — sometimes your main base, sometimes a regular stop between Lagos, Accra, New York, Dubai, or wherever else home is. You've succeeded across entrepreneurship, finance, tech, law, or the creative industries. Time, not money, is the scarce resource.</p>
-                <p>You already work with private specialists — your banker, your lawyer, your accountant. You don't yet have one person who coordinates the moving parts of your life.</p>
+                <p>London is part of your life. Sometimes your main base, sometimes a regular stop between Lagos, Accra, New York, Dubai, or wherever else home is. You've succeeded across entrepreneurship, finance, tech, law, or the creative industries. Time, not money, is the scarce resource.</p>
+                <p>You already work with private specialists: your banker, your lawyer, your accountant. You don't yet have one person who coordinates the moving parts of your life.</p>
                 <p>You travel often. Sometimes for business, sometimes for the moments that matter to your community: a society wedding in Lagos, a milestone birthday somewhere private, a discreet medical consultation in London. Your family is part of the equation.</p>
                 <p>That's what we're here for.</p>
             </div>
@@ -149,8 +149,8 @@ $partners = [
         <div class="craft-tile" style="--tile-img: url('<?php echo $t; ?>/assets/membership-transport.jpeg');">
             <span class="craft-tile__num">I.</span>
             <div class="craft-tile__inner">
-                <h3 class="craft-tile__title">Travel design and management</h3>
-                <p class="craft-tile__body">FORA-certified luxury travel advisory with global supplier perks. Multi-city itineraries, family travel, last-minute reroutes, private aviation when needed. Wake-up calls and flight tracking on travel days are standard.</p>
+                <h3 class="craft-tile__title">Private Travel</h3>
+                <p class="craft-tile__body">FORA-certified luxury travel advisory, delivered through Jaiye Journeys. Multi-city itineraries, private aviation and last-minute reroutes. Every journey handled from departure to return.</p>
             </div>
         </div>
 
@@ -158,14 +158,14 @@ $partners = [
             <span class="craft-tile__num">II.</span>
             <div class="craft-tile__inner">
                 <h3 class="craft-tile__title">Medical Concierge</h3>
-                <p class="craft-tile__body">Specialist consultations in London, end-to-end logistics from arrival to recovery, accompanying family considered. We don't give medical advice — we coordinate the people who do.</p>
+                <p class="craft-tile__body">Specialist consultations in London, with end-to-end logistics from arrival to recovery. We don't give medical advice. We coordinate the people who do.</p>
             </div>
         </div>
 
         <div class="craft-tile" style="--tile-img: url('<?php echo $t; ?>/assets/membership-entertainment-experience-bookings.jpeg');">
             <span class="craft-tile__num">III.</span>
             <div class="craft-tile__inner">
-                <h3 class="craft-tile__title">Lifestyle and access</h3>
+                <h3 class="craft-tile__title">Lifestyle &amp; Access</h3>
                 <p class="craft-tile__body">Sold-out tables, private events, sporting and cultural occasions, weddings and milestone moments.</p>
             </div>
         </div>
@@ -173,8 +173,8 @@ $partners = [
         <div class="craft-tile" style="--tile-img: url('<?php echo $t; ?>/assets/membership-home-managment.jpeg');">
             <span class="craft-tile__num">IV.</span>
             <div class="craft-tile__inner">
-                <h3 class="craft-tile__title">Personal logistics</h3>
-                <p class="craft-tile__body">School visits, property viewings, document handling, cross-border shipping, household coordination. UK-based on-the-ground team for the things that have to happen in person.</p>
+                <h3 class="craft-tile__title">Household &amp; Personal Logistics</h3>
+                <p class="craft-tile__body">Property viewings, document handling, cross-border shipping and household coordination. A UK-based team on the ground for the things that have to happen in person.</p>
             </div>
         </div>
 
@@ -211,7 +211,7 @@ $partners = [
                 <span class="why-numeral">III.</span>
                 <div>
                     <h3 class="why-title">Travel and health as specialisms.</h3>
-                    <p class="why-body">Most concierges treat travel as a booking task and health as a referral. We treat both as core craft — FORA-certified travel advisory, health tourism coordination from consultation to recovery.</p>
+                    <p class="why-body">Most concierges treat travel as a booking task and health as a referral. We treat both as core craft: FORA-certified travel advisory, medical concierge coordination from consultation to recovery.</p>
                 </div>
             </div>
 
@@ -235,7 +235,7 @@ $partners = [
         <span class="section-label">Membership</span>
         <span class="brass-rule"></span>
         <h2 class="home-cta-heading">Membership is how we work together.</h2>
-        <p class="home-cta-body">TJC operates on a private retainer model. There are no ad-hoc bookings, no open enquiries. Everything runs through membership — which means everything runs properly.</p>
+        <p class="home-cta-body">TJC operates on a private retainer model. There are no ad-hoc bookings, no open enquiries. Everything runs through membership, which means everything runs properly.</p>
         <a href="<?php echo esc_url( home_url( '/membership/' ) ); ?>" class="btn-outline">
             View Membership
         </a>
