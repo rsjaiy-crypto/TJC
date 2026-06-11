@@ -112,7 +112,7 @@ $partners = [
           if (el) el.textContent = quotes[Math.floor(Math.random() * quotes.length)];
         })();
         </script>
-        <p class="promise-body">We exist for the people who have built lives worth enjoying, who don't always have the time to enjoy them. Our job is to take the friction out, so the moments you actually live for are the ones you remember.</p>
+        <p class="promise-body">We exist for people who have built lives worth enjoying, and rarely have the time to enjoy them. Our work is quiet, precise and personal: removing friction so the moments that matter are the ones you remember.</p>
         <p class="promise-pillars">Travel. Health. Access. Enjoyment.</p>
     </div>
 </section>
@@ -235,7 +235,7 @@ $partners = [
         <span class="section-label">Membership</span>
         <span class="brass-rule"></span>
         <h2 class="home-cta-heading">Membership is how we work together.</h2>
-        <p class="home-cta-body">TJC operates on a private retainer model. There are no ad-hoc bookings, no open enquiries. Everything runs through membership, which means everything runs properly.</p>
+        <p class="home-cta-body">TJC operates on a private retainer. No ad-hoc bookings, no open enquiries. A small number of clients, each known well, each served properly.</p>
         <a href="<?php echo esc_url( home_url( '/membership/' ) ); ?>" class="btn-outline">
             View Membership
         </a>

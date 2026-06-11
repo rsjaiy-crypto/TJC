@@ -11,7 +11,7 @@ $t = esc_url( get_template_directory_uri() );
         <span class="page-hero-label">The Jaiye Concierge</span>
         <h1 class="page-hero-heading">Membership</h1>
         <p class="page-hero-sub">Three ways to work together.</p>
-        <p class="page-hero-body">TJC is a private retainer service. Membership is not a subscription. It's an ongoing working relationship. We keep the client list small so the service stays personal.</p>
+        <p class="page-hero-body">TJC is a private retainer service. Not a subscription, an ongoing working relationship. The client list is kept deliberately small so the service stays personal.</p>
     </div>
 </section>
 
@@ -23,8 +23,7 @@ $t = esc_url( get_template_directory_uri() );
 
         <span class="tier-numeral">I.</span>
         <h2 class="tier-name">Foundation</h2>
-        <span class="tier-price">£1,750 / month</span>
-        <span class="tier-billing">Billed quarterly in advance.</span>
+        <p class="tier-invitation">Membership by invitation and conversation.</p>
         <p class="tier-tagline">The entry tier, for occasional and seasonal use.</p>
         <span class="tier-divider"></span>
 
@@ -62,8 +61,7 @@ $t = esc_url( get_template_directory_uri() );
 
         <span class="tier-numeral">II.</span>
         <h2 class="tier-name">Signature</h2>
-        <span class="tier-price">£2,750 / month</span>
-        <span class="tier-billing">Billed quarterly in advance.</span>
+        <p class="tier-invitation">Membership by invitation and conversation.</p>
         <p class="tier-tagline">The core tier, for regular use, where most clients sit.</p>
         <span class="tier-divider"></span>
 
@@ -103,8 +101,7 @@ $t = esc_url( get_template_directory_uri() );
 
         <span class="tier-numeral">III.</span>
         <h2 class="tier-name">Bespoke</h2>
-        <span class="tier-price">£4,500 / month</span>
-        <span class="tier-billing">Billed quarterly in advance.</span>
+        <p class="tier-invitation">Membership by invitation and conversation.</p>
         <p class="tier-tagline">The full retainer, for clients who want to think about almost nothing.</p>
         <span class="tier-divider"></span>
 
@@ -216,8 +213,8 @@ $t = esc_url( get_template_directory_uri() );
         <div class="how-grid">
 
             <div>
-                <span class="how-item__label">Billing</span>
-                <p class="how-item__body">Quarterly in advance, with a six-month minimum commitment. Annual billing available at 10% discount after the first six months.</p>
+                <span class="how-item__label">Engagement</span>
+                <p class="how-item__body">Membership terms, including fees and billing, are shared in private conversation. Quarterly commitments, with a six-month minimum.</p>
             </div>
 
             <div>
@@ -257,7 +254,7 @@ $t = esc_url( get_template_directory_uri() );
         <span class="section-label">Begin</span>
         <span class="brass-rule"></span>
         <h2 class="page-cta-heading">Ready to begin?</h2>
-        <p class="page-cta-body">Membership starts with a private conversation. No pitch deck, no sales call. Just a chance for us to understand your life, and for you to decide whether we're the right people for it.</p>
+        <p class="page-cta-body">Membership begins with a private conversation. No pitch deck, no sales call. A chance for us to understand your life, and for you to decide whether we are the right people for it.</p>
         <a href="<?php echo esc_url( home_url( '/contact/' ) ); ?>" class="btn-outline">
             Get in touch
         </a>

@@ -19,7 +19,7 @@
     }
 
     function start() {
-      timer = setInterval(function () { goTo(current + 1); }, 5000);
+      timer = setInterval(function () { goTo(current + 1); }, 7000);
     }
 
     dots.forEach(function (dot, i) {

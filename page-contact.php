@@ -6,7 +6,7 @@
 
         <h1 class="contact-heading">Begin<br>here.</h1>
 
-        <p class="contact-intro">Tell us about yourself and what you're looking for. We'll take it from there.</p>
+        <p class="contact-intro">Membership begins with a conversation. Tell us a little about your life, and we will take it from there.</p>
 
         <a href="https://wa.me/message/2CNQM6SDUSMAE1"
            class="btn-outline"
