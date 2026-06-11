@@ -16,9 +16,8 @@ $t = esc_url( get_template_directory_uri() );
     </div>
 
     <div class="hero-content">
-        <span class="hero-eyebrow">The Jaiye Concierge</span>
         <em class="hero-word">Enjoy.</em>
-        <p class="hero-sub">A private members' concierge. London based, globally connected.</p>
+        <p class="hero-sub">A private concierge service for Nigerians and the wider African diaspora.</p>
         <a href="<?php echo esc_url( home_url( '/membership/' ) ); ?>" class="btn-outline">
             Explore Membership
         </a>
@@ -69,7 +68,7 @@ $partners = [
 ];
 ?>
 <section class="marquee-section" aria-label="Trusted partners">
-    <p class="marquee-intro">Through our travel arm, Jaiye Journeys, we hold membership of the world's leading preferred partner programmes.</p>
+    <p class="marquee-intro">Through our travel arm, Jaiye Journeys, we are proud members of the following luxury preferred partner programmes.</p>
     <div class="marquee-track">
 
         <div class="marquee-inner" aria-hidden="false">
@@ -127,9 +126,9 @@ $partners = [
         <div class="who-grid">
             <h2 class="who-heading">Designed for the way you actually live.</h2>
             <div class="who-body">
-                <p>London is part of your life. Sometimes your main base, sometimes a regular stop between New York, Dubai, Lagos, or wherever else home is. You've succeeded across entrepreneurship, finance, tech, law, or the creative industries. Time, not money, is the scarce resource.</p>
+                <p>London is part of your life. Sometimes your main base, sometimes a regular stop between Lagos, Accra, New York, Dubai, or wherever else home is. You've succeeded across entrepreneurship, finance, tech, law, or the creative industries. Time, not money, is the scarce resource.</p>
                 <p>You already work with private specialists: your banker, your lawyer, your accountant. You don't yet have one person who coordinates the moving parts of your life.</p>
-                <p>You travel often. Sometimes for business, sometimes for the moments that matter most: a society wedding abroad, a milestone birthday somewhere private, a discreet consultation in London. Your family is part of the equation.</p>
+                <p>You travel often. Sometimes for business, sometimes for the moments that matter to your community: a society wedding in Lagos, a milestone birthday somewhere private, a discreet medical consultation in London. Your family is part of the equation.</p>
                 <p>That's what we're here for.</p>
             </div>
         </div>
@@ -196,7 +195,7 @@ $partners = [
                 <span class="why-numeral">I.</span>
                 <div>
                     <h3 class="why-title">Cultural fluency, by design.</h3>
-                    <p class="why-body">We understand the protocols, the calendars, the names and the assumptions you should never have to explain. Your world is familiar to us, wherever it spans.</p>
+                    <p class="why-body">Built for the African diaspora, by someone in the community. We understand the protocols, the calendar, the names, the assumptions you don't have to explain.</p>
                 </div>
             </div>
 

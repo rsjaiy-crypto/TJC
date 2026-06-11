@@ -4,7 +4,6 @@
 
     <div class="contact-hero">
 
-        <span class="contact-eyebrow">The Jaiye Concierge</span>
         <h1 class="contact-heading">Begin<br>here.</h1>
 
         <p class="contact-intro">Membership begins with a conversation. Tell us a little about your life, and we will take it from there.</p>
